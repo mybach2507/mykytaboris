@@ -1,0 +1,12 @@
+name: Epic
+version: 1.0.0
+main: io.github.example.epicspleef.EpicSpleefMain
+description: An awesome minigame
+author: Ofahrt 2024
+website: https://d120.de
+api-version: '1.20'
+commands:
+  command:
+    aliases: ["createspleef"]
+    description: "Create a spleef arena"
+    usage: "/createspleef"

@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  paper:
+    image: itzg/minecraft-server:2024.5.0-java21
+    ports:
+      - "25565:25565"
+    environment:
+      TYPE: PAPER
+      VERSION: "1.20.6"
+      EULA: true # By using this environment variable, you are indicating your acceptance of the Minecraft EULA
+      ONLINE_MODE: true
+    volumes:
+      - ../../build/libs:/plugins
+      - ./paper:/data
